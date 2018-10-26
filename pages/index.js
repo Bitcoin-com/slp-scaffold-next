@@ -1,24 +1,30 @@
-import Link from 'next/link';
-import Head from '../components/head';
-import Nav from '../components/nav';
-let Wormhole = require('wormholecash/lib/Wormhole').default;
-let wormhole = new Wormhole();
+import Link from "next/link";
+import Head from "../components/head";
+import Nav from "../components/nav";
+let SLPSDK = require("slp-sdk/lib/SLP").default;
+let SLP = new SLPSDK();
+(async () => {
+  try {
+    let list = await SLP.list();
+    console.log(list);
+  } catch (error) {
+    console.error(error);
+  }
+})();
 
 class Index extends React.Component {
   constructor(props) {
     super(props);
   }
 
-  componentDidMount() {
-  }
+  componentDidMount() {}
 
   render() {
-
     return (
       <div className="App">
         <header className="App-header">
-          <img src='static/logo.png' className="App-logo" alt="logo" />
-          <h1 className="App-title">Hello Wormhole</h1>
+          <img src="static/logo.png" className="App-logo" alt="logo" />
+          <h1 className="App-title">Hello SLP</h1>
         </header>
       </div>
     );
