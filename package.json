@@ -1,6 +1,6 @@
 {
   "name": "slp-scaffold-nextjs",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "license": "MIT",
   "description": "Basic nextJS app w/ SLP SDK bindings",
   "author": "Gabriel Cardona @ Bitcoin.com",
