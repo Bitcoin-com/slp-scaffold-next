@@ -1,6 +1,6 @@
 {
   "name": "slp-scaffold-nextjs",
-  "version": "1.0.5",
+  "version": "1.1.1",
   "license": "MIT",
   "description": "Basic nextJS app w/ SLP SDK bindings",
   "author": "Gabriel Cardona <gabriel@bitcoin.com>",
@@ -16,7 +16,7 @@
     "coverage:report": "nyc --reporter=html mocha --require babel-core/register --timeout 5000"
   },
   "dependencies": {
-    "slp-sdk": "1.0.5",
+    "slp-sdk": "1.1.1",
     "next": "^5.1.0",
     "react": "^16.3.0",
     "react-dom": "^16.3.0"
