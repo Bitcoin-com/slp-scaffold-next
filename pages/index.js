@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "../components/head";
 import Nav from "../components/nav";
-let SLPSDK = require("slp-sdk/lib/SLP").default;
+let SLPSDK = require("slp-sdk");
 let SLP = new SLPSDK();
 (async () => {
   try {
